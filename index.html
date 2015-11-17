@@ -11,29 +11,60 @@
 
 
 <style type="text/css">
-.container {
-	background: red;
-}
-
-.container-fluid {
-	background: blue;
-}
-
-
-</style>
-
-<head>
-	<title></title>
+.red {
+			background-color: red;
+		}
+		.blue {
+			background-color: blue;
+		}
+		
+	</style>
 </head>
 <body>
 
+<div class="container">
+	<div class="row">
+		<div class="col-lg-6 red">A</div>
+		<div class="col-lg-6 blue">A</div>
+
+	</div>
+</div>
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-lg-6 blue">B</div>
+		<div class="col-lg-6 red">B</div>
+	</div>
+</div>
 
 
-	<div class="container"><h1>Sono un titolo</h1>Sono un contenitore fisso</div>
+<div class="container">
+	<div class="row">
+		<div class="col-lg-3 red">A</div>
+		<div class="col-lg-9 blue">A</div>
 
-	<div class="container-fluid">Sono un contenitore fluido</div>
+	</div>
+</div>
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-lg-9 blue">B</div>
+		<div class="col-lg-3 red">B</div>
+	</div>
+</div>
 
 
+<div class="container">
+	<div class="row">
+		<div class="col-lg-6 col-md-9 red">A0000</div>
+		<div class="col-lg-6 col-md-3 blue">000000A</div>
+
+	</div>
+</div>
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-lg-6 blue">B</div>
+		<div class="col-lg-6 red">B</div>
+	</div>
+</div>
 
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
