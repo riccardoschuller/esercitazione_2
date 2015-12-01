@@ -13,13 +13,26 @@
 
 <title>Super Gourmet</title>
 
+<link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+
 <style type="text/css">
+
+
+  body {
+    background-color: #eee
+  }
+
 	.jumboclass {
 		padding: auto 0;
 		background-image: url(http://www.hoteldolceavita.it/images/singleClaim/header-ristorante/portfolio6-piatti12_53144.jpg);
 		background-size: cover;
 
 	}	
+
+  .jumboblock {
+    background-color:rgba(255,255,255,0.3);
+    border-radius: 3%;
+  }
 
 	.piattodelgiorno {
 		height: 280px;
@@ -52,6 +65,26 @@
     margin-top: 50px;
   }
 
+  .font2 {
+    font-family: 'Pacifico', cursive;
+  }
+
+  .bg-white {
+        background-color: white;
+  }
+
+  .quote-div {
+    background-color: #eee;
+
+  }
+
+  .fontquote {
+    font-size: 2.5em;
+    text-align: center;
+  }
+
+
+
 
   @media screen and (max-width: 480px) {
 
@@ -65,6 +98,15 @@
 
     .piattodelgiorno {
       height: 200px;
+    }
+
+    .pad-none {
+      margin-top: 25px;
+      padding: 0;
+    }
+
+    .pad-top {
+      padding-top: 20px;
     }
 
   }
@@ -84,12 +126,12 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">Super Gourmet</a>
+      <a class="navbar-brand font2" href="#">Super Gourmet</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
+      <ul class="nav navbar-nav font2">
        
         <li><a href="#">Chi siamo</a></li>
          <li><a href="#">Foto</a></li>	
@@ -97,8 +139,8 @@
  
       </ul>
    
-      <ul class="nav navbar-nav navbar-right">
-      	<li><a href="#">I nostri certificati</a></li>
+      <ul class="nav navbar-nav navbar-right font2">
+      	<li><a href="#">Cosa dicono di noi</a></li>
         <li><a href="#">Contatti</a></li>
 
 	</ul>
@@ -108,9 +150,9 @@
 
 <div class="container-fluid">
 
-<div class="jumbotron jumboclass">
-	<div class="container">
-  		<h1>Super Gourmet</h1>
+<div class="jumbotron jumboclass ">
+	<div class="container jumboblock">
+  		<h1 class="font2">Super Gourmet</h1>
   		<p>Il miglior ristorante gourmet di Roma con prezzi per tutti i palati</p>
 
   		<p><a class="btn btn-primary btn-lg" href="#" role="button">Leggi di più</a></p>
@@ -118,19 +160,29 @@
 </div>
 
 </div>
+<div class="container-fluid"></div>
+<div class="row">
+
+  <div class="col-xs-12 quote-div"><blockquote>
+  <p class="font2 fontquote">La scoperta di un piatto nuovo è più preziosa per il genere umano che la scoperta di una nuova stella.</p>
+  <footer><cite title="Source Title">Anthelme Brillat-Savarin</cite></footer>
+</blockquote></div>
+
+</div>
 
 <div class="container">
 
 <div class="row">
-	<div class="col-xs-6 piattodelgiorno">
-		<h2>Il piatto del giorno</h2>
+	<div class="col-sm-6 piattodelgiorno">
+		<h2 class="font2 pad-top">Il piatto del giorno</h2>
 	</div>
 
-	<div class="col-xs-6">
+	<div class="col-sm-6 pad-none">
 
-		<div id="carousel-example-generic" class="carousel slide staff" data-ride="carousel">
+		<div id="carousel-example-generic" class="carousel slide staff bg-white" data-ride="carousel">
   <!-- Indicators -->
-  <h2>Il nostro staff</h2>
+  <div class="container">
+  <h2 class="font2">Il nostro staff</h2></div>
   <ol class="carousel-indicators">
     <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
     <li data-target="#carousel-example-generic" data-slide-to="1"></li>
@@ -172,7 +224,7 @@
 	<div class="bottomdiv panel panel-default">
   <div class="panel-body">
     <address class="indirizzo">
-  <strong>Super Gourmet Ristorante</strong><br>
+  <strong class="font2">Super Gourmet Ristorante</strong><br>
   Viale Regina Elena 89<br>
   Roma, RM 00234<br>
   <abbr title="Phone">Tel:</abbr> 3403355943
