@@ -13,8 +13,8 @@ var i = prompt("Inserisci un numero", "Digita un numero qui...") ;
 	
 
 	 if (i%2 == 0) {
-	 	if (i != 4) {alert(i + " è pari")
-	};
+	 	alert(i + " è pari")
+	;
 		
 	}
 
