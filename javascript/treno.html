@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<meta charset="utf-8">
+<head>
+	<title></title>
+</head>
+<body>
+
+
+
+<script type="text/javascript">
+
+var lista = ["riccardo","erika","marco","rossella","giacomo","francesca","alessandro","elisa","doc","indy","rita","franco","emanuele","pina","paco"]
+
+var nome = prompt("Inserisci il tuo nome di battesimo.")
+
+
+if (isNaN(nome) == true) {
+	
+	var i = 0
+	var count = 0
+	
+	while(i < lista.length){
+	console.log(lista[i]);
+	
+	if (lista[i] == nome){
+		count++;
+		alert("Il nome " + nome + " è gia in lista")
+	}
+		i++
+		}
+
+		if (count< 1){
+			lista.push(nome);
+			alert("Sei stato inserito nella lista: " + lista)
+		}
+		
+
+}
+
+else if (isNaN(nome) == false) {
+	alert("Devi inserire un nome!")
+}
+
+
+ 
+
+
+</script>
+</body>
+</html>
