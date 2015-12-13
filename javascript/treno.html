@@ -12,6 +12,10 @@
 
 var lista = ["riccardo","erika","marco","rossella","giacomo","francesca","alessandro","elisa","doc","indy","rita","franco","emanuele","pina","paco"]
 
+
+
+
+function addname(){
 var nome = prompt("Inserisci il tuo nome di battesimo.")
 
 
@@ -42,8 +46,11 @@ else if (isNaN(nome) == false) {
 	alert("Devi inserire un nome!")
 }
 
+var continua = confirm("Vuoi continuare?")
+if (continua == true) {addname()};
+}
 
- 
+addname() 
 
 
 </script>
