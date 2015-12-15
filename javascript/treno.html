@@ -6,52 +6,56 @@
 </head>
 <body>
 
-
-
 <script type="text/javascript">
+
+debugger;
 
 var lista = ["riccardo","erika","marco","rossella","giacomo","francesca","alessandro","elisa","doc","indy","rita","franco","emanuele","pina","paco"]
 
+init();
 
+function addName(){
 
+	var nome = prompt("Inserisci il tuo nome di battesimo.")
 
-function addname(){
-var nome = prompt("Inserisci il tuo nome di battesimo.")
-
-
-if (isNaN(nome) == true) {
+	if (isNaN(nome) == true) {
 	
-	var i = 0
-	var count = 0
-	
-	while(i < lista.length){
-	console.log(lista[i]);
-	
-	if (lista[i] == nome){
-		count++;
-		alert("Il nome " + nome + " è gia in lista")
-	}
-		i++
+		var i = 0
+		var trovato = false;
+		
+		while(i < lista.length){
+		
+			console.log(lista[i]);
+
+			if (lista[i].toLowerCase() == nome.toLowerCase() ){
+				trovato = true;
+				alert("Il nome " + nome + " è gia in lista")
+			}
+			
+			i++
 		}
 
-		if (count< 1){
+		if (trovato === false){
 			lista.push(nome);
 			alert("Sei stato inserito nella lista: " + lista)
 		}
-		
+			
+	} else {
+		alert("Devi inserire un nome!")
+	}
 
 }
 
-else if (isNaN(nome) == false) {
-	alert("Devi inserire un nome!")
-}
+function init(){
 
-var continua = confirm("Vuoi continuare?")
-if (continua == true) {addname()};
-}
+	var continua = true;
 
-addname() 
+	while (continua == true) {
+		addName();
+		continua = confirm("Vuoi continuare?");
+	};
 
+};
 
 </script>
 </body>
